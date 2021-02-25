@@ -1,3 +1,3 @@
-## Race-Game
+# Race-Game
 
-# My first java script game
+## My first java script game
