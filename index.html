@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Game</title>
+    <meta name="description" content="JavaScript RaceGame" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="turn">
+      <p class="info">
+        Please rotate your device! <br />
+        🔄 <br />
+        <span class="info1"
+          >unfortunately it is not possible to play in portrait mode</span
+        >
+      </p>
+    </div>
+    <div class="container">
+      <audio class="sound" loop>
+        <source src="sounds/music.mp3" type="audio/mpeg" />
+      </audio>
+      <audio class="c1" src="sounds/c1.mp3"></audio>
+      <audio class="c2" src="sounds/c2.mp3"></audio>
+      <audio class="c3" src="sounds/c3.mp3"></audio>
+      <audio class="c4" src="sounds/c4.mp3"></audio>
+      <p class="description">
+        Money <span class="cash">100</span><span class="dollar">$</span>
+      </p>
+      <p class="description1">
+        bet<input class="bet" type="number" min="1" /><span class="dollar-bet">
+          $</span
+        >
+      </p>
+      <div class="message"></div>
+      <img class="road" src="img/road.png" alt="road" />
+      <img class="car1" src="img/car1.png" alt="red car" />
+      <img class="car2" src="img/car2.png" alt="green car" />
+      <img src="img/car1.png" alt="chosen car" class="car" />
+      <button class="btn play-again">new game</button>
+      <button class="btn play">play</button>
+      <button class="btn change-car">change car</button>
+      <button class="btn music">music</button>
+      <button class="btn full-screen">full screen</button>
+      <div class="modal hidden">
+        <button class="btn yes">Yes</button>
+        <button class="btn no">No</button>
+        <h1>Are you sure?</h1>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
