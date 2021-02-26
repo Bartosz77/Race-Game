@@ -27,6 +27,7 @@ cash.textContent = money;
 const fullScreen = function () {
   if (fullScreenStatus) {
     fullScreenStatus = false;
+    btnFullScr.textContent = 'fullscreen off'
     /* View in fullscreen */
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
@@ -39,6 +40,7 @@ const fullScreen = function () {
     }
   } else {
     fullScreenStatus = true;
+    btnFullScr.textContent = 'fullscreen'
     /* Close fullscreen */
     if (document.exitFullscreen) {
       document.exitFullscreen();
@@ -61,7 +63,7 @@ const playSound = function () {
   const music = document.querySelector('.sound');
   if (music.paused) {
     music.play();
-    btnMusic.textContent = 'no music';
+    btnMusic.textContent = 'music off';
   } else {
     music.pause();
     music.currentTime = 0;
